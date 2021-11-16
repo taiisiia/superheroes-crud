@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/taiisiia/superheroes-crud/issues"
   },
-  "homepage": "https://github.com/taiisiia/superheroes-crud#readme"
+  "homepage": "https://github.com/taiisiia/superheroes-crud#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
