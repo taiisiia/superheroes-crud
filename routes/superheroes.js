@@ -1,10 +1,12 @@
 const express = require("express");
 const shRouter = express.Router();
+const shController = require("../controllers/superheroes");
+const validateHero = require("../middlewares/validateHero")
 
 shRouter
 .route("/")
 .get(shController.getAllSupHeroes)
-.post(shController.createSupHero);
+.post(validateHero, shController.createSupHero);
 
 shRouter
 .route("/:id")
